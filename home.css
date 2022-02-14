@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300&family=Teko&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.main__header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #b71e23;
+  padding: 0.4rem;
+  color: white;
+  font-size: 13px;
+}
+
+.icon--github-circle {
+  width: 23px;
+}
+
+.top__nav {
+  display: flex;
+  background-color: black;
+  padding: 10px 0px 10px 0px;
+
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.top__nav--left {
+  order: 1;
+}
+
+.top__nav--right {
+  order: 3;
+}
+
+.top__nav--links {
+  display: flex;
+  border-bottom: 1px solid rgba(143, 120, 11, 0.8);
+  width: 100%;
+  justify-content: center;
+}
+
+.top__nav--links a {
+  margin: 0 20px;
+  color: white;
+  text-decoration: none;
+  font-family: "Teko", sans-serif;
+}
+
+.logo {
+  width: 27vh;
+  margin: 0rem 1rem;
+  order: 2;
+}
+
+.top__nav--links a:hover {
+  font-size: 15px;
+}
+
+.div--items {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.online-in-house {
+  width: 57%;
+  border: 2px solid rgba(143, 120, 11, 0.8);
+  border-radius: 0.3rem;
+}
+
+@media screen and (max-width: 768px) {
+
+  .top__nav,
+  .top__nav--links {
+    flex-flow: column nowrap;
+  }
+
+  .top__nav--links {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top__nav--links a {
+    margin: 10px 0;
+  }
+
+  .logo {
+    order: 1;
+  }
+
+  .top__nav--left {
+    order: 2;
+  }
+
+  .top__nav--right {
+    order: 3;
+  }
+}
+
+.div--the-best-pizza {
+  display: flex;
+  justify-content: center;
+  color: white;
+
+}
+
+.div--the-best-pizza {
+  margin: 1.4rem 0rem 3rem;
+  font-size: 30px;
+  font-family: 'Redressed', cursive;
+}
+
+.baseboard--footer {
+  background: #FFBD59;
+  padding-top: 2px;
+}
+
+.baseboard {
+  display: flex;
+  justify-content: center;
+}
