@@ -20,13 +20,13 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Validação básica
+    // Validacao basica
     if (!formData.name || !formData.email || !formData.phone || !formData.message) {
       alert('Por favor, preencha todos os campos obrigatórios.');
       return;
     }
     
-    // Validação de email
+    // Validacao de email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       alert('Por favor, insira um e-mail válido.');

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* Variáveis CSS para consistência */
+/* Variaveis CSS para consistencia */
 :root {
   --primary-red: #b71e23;
   --primary-gold: #FFBD59;
@@ -16,7 +16,7 @@
   --shadow-dark: rgba(0, 0, 0, 0.5);
 }
 
-/* Animações profissionais */
+/* Animacoes profissionais */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -1220,7 +1220,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Seleção de texto personalizada */
+/* Selecao de texto personalizada */
 ::selection {
   background: var(--primary-gold);
   color: var(--dark-bg);
