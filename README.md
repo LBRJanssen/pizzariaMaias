@@ -36,34 +36,6 @@ Este projeto começou em 2022 como um site estático em HTML/CSS/JavaScript puro
 - **CSS3** - Estilização com animações e gradientes modernos
 - **Google Fonts** - Fontes Teko, Redressed e Inter
 
-## Estrutura do Projeto
-
-```
-pizzariaMaias/
-├── public/
-│   ├── image/          # Imagens do projeto
-│   └── icons/          # Ícones
-├── src/
-│   ├── components/     # Componentes reutilizáveis
-│   │   ├── Header.jsx
-│   │   ├── Nav.jsx
-│   │   └── Footer.jsx
-│   ├── pages/          # Páginas da aplicação
-│   │   ├── Home.jsx
-│   │   ├── Menu.jsx
-│   │   ├── Contact.jsx
-│   │   └── Localization.jsx
-│   ├── data/           # Dados e configurações
-│   │   └── menuData.js
-│   ├── App.jsx         # Componente principal
-│   ├── App.css         # Estilos globais
-│   ├── index.css       # Reset e estilos base
-│   └── main.jsx        # Ponto de entrada
-├── index.html
-├── package.json
-└── README.md
-```
-
 ## Como Executar
 
 ### Pré-requisitos
