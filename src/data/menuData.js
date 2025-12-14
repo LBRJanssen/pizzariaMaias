@@ -111,4 +111,3 @@ export const highlights = [
     image: 'https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=600&h=400&fit=crop&q=80'
   }
 ];
-

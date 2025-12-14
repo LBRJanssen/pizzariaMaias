@@ -1,4 +1,4 @@
-# Pizzaria Maia's - React App
+# Pizzaria Maias - React App
 
 <div align="center">
 
