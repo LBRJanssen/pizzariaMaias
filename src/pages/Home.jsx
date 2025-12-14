@@ -15,7 +15,7 @@ const Home = () => {
           </div>
           <div className="div--the-best-pizza">
             <p className="paragraph--best-pizza">
-              Here at Pizzeria Maia's, the Italian art of pizza is valued!!
+              Aqui na Pizzaria Maia's, valorizamos a arte italiana da pizza!!
             </p>
           </div>
         </div>

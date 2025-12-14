@@ -5,7 +5,7 @@ const Nav = () => {
     <nav className="top__nav" role="navigation" aria-label="Menu principal">
       <div className="top__nav--links top__nav--left">
         <Link to="/" aria-label="Ir para página inicial">
-          HOME PAGE
+          INÍCIO
         </Link>
         <Link to="/menu" aria-label="Ver cardápio">
           CARDÁPIO
@@ -16,10 +16,10 @@ const Nav = () => {
 
       <div className="top__nav--links top__nav--right">
         <Link to="/contact" aria-label="Ir para página de contato">
-          CONTACT
+          CONTATO
         </Link>
         <Link to="/localization" aria-label="Ver localização">
-          LOCATE
+          LOCALIZAÇÃO
         </Link>
       </div>
     </nav>
