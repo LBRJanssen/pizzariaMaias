@@ -90,7 +90,7 @@ const Checkout = () => {
 
     setIsProcessing(true);
 
-    // simula processamento
+    // processa pagamento
     setTimeout(() => {
       const newOrderNumber = Math.floor(Math.random() * 1000000);
       setOrderNumber(newOrderNumber);
@@ -115,7 +115,7 @@ const Checkout = () => {
   const handleDeliveryTypeSelect = (type) => {
     setDeliveryType(type);
     setShowPayment(false);
-    // limpa endereco se mudar para retirada
+    // limpa endereco
     if (type === 'retirada') {
       setAddress({ street: '', number: '', complement: '', neighborhood: '', city: '', zipCode: '' });
     }

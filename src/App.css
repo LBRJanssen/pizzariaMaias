@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* variaveis css */
+/* variaveis */
 :root {
   --primary-red: #b71e23;
   --primary-gold: #FFBD59;
@@ -16,7 +16,7 @@
   --shadow-dark: rgba(0, 0, 0, 0.5);
 }
 
-/* animacoes mais robustas */
+/* animacoes */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -123,7 +123,7 @@
   filter: drop-shadow(0 4px 8px rgba(255, 189, 89, 0.5));
 }
 
-/* nav com sticky */
+/* nav */
 .top__nav {
   display: flex;
   background: linear-gradient(180deg, #000000 0%, #1a1a1a 100%);
@@ -150,7 +150,7 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .top__nav--links a {
@@ -159,7 +159,7 @@
   text-decoration: none;
   font-family: "Teko", sans-serif;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.7rem;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   padding: 0.5rem 1rem;
@@ -192,7 +192,7 @@
 .logo {
   width: 28vh;
   max-width: 200px;
-  margin: 0 2rem;
+  margin: 0 0.50rem;
   order: 2;
   transition: all 0.3s ease;
   filter: drop-shadow(0 4px 8px rgba(255, 189, 89, 0.3));
@@ -203,7 +203,19 @@
   filter: drop-shadow(0 6px 12px rgba(255, 189, 89, 0.5));
 }
 
-/* hero section */
+.menu-overlay {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* hero */
 .hero-section {
   padding: 4rem 2rem;
   background: linear-gradient(180deg, var(--dark-bg) 0%, #1a1a1a 100%);
@@ -280,7 +292,7 @@
   line-height: 1.4;
 }
 
-/* sobre nos */
+/* sobre */
 .about-section {
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
   padding: 6rem 2rem;
@@ -345,7 +357,7 @@
   animation: fadeInUp 1s ease-out 0.2s both;
 }
 
-/* destaques do cardapio */
+/* destaques */
 .highlights-section {
   padding: 6rem 2rem;
   background: linear-gradient(180deg, var(--dark-bg) 0%, #0f0f0f 100%);
@@ -528,7 +540,7 @@
   z-index: 1;
 }
 
-/* features da pizzaria */
+/* features */
 .features-section {
   padding: 6rem 2rem;
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
@@ -600,7 +612,7 @@
   z-index: 1;
 }
 
-/* estilos do menu */
+/* menu */
 .menu-section {
   padding: 4rem 2rem;
   min-height: 80vh;
@@ -769,7 +781,7 @@
   background-clip: text;
 }
 
-/* estilos do contato */
+/* contato */
 .contact-section {
   padding: 5rem 2rem;
   min-height: 80vh;
@@ -984,7 +996,7 @@
   transform: none;
 }
 
-/* estilos da localizacao */
+/* localizacao */
 .localization-section {
   padding: 5rem 2rem;
   min-height: 80vh;
@@ -1017,9 +1029,10 @@
 .localization-container {
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
   gap: 4rem;
+  align-items: flex-start;
 }
 
 .address-info {
@@ -1131,124 +1144,771 @@
   transform: scale(1.1) translateY(-2px);
 }
 
-/* responsivo */
+/* removido - ja tem abaixo */
+
+/* responsivo mobile */
+
+/* tablets */
 @media screen and (max-width: 968px) {
-  .contact-container,
-  .localization-container {
+  .features-container {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
 
   .highlights-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 
-  .features-container {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .contact-container {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 
+/* mobile */
 @media screen and (max-width: 768px) {
-  .top__nav {
-    padding: 0.8rem 0;
-  }
-
-  .top__nav,
-  .top__nav--links {
-    flex-flow: column nowrap;
-  }
-
-  .top__nav--links {
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .top__nav--links a {
-    margin: 0;
-    font-size: 1rem;
+  /* header */
+  .main__header {
     padding: 0.5rem 1rem;
+    font-size: 11px;
   }
 
-  .top__nav--links a:hover {
-    font-size: 1.1rem;
+  .top-description {
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 0.3rem;
+  }
+
+  .icon--github-circle {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* navegacao */
+  .menu-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 99;
+    animation: fadeIn 0.3s ease;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 101;
+    order: 1;
+    flex: 0 0 auto;
+  }
+
+  .hamburger {
+    width: 25px;
+    height: 3px;
+    background: var(--primary-gold);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger.open:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+  }
+
+  .hamburger.open:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  .top__nav {
+    padding: 1.5rem 1rem;
+    min-height: 100px;
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .top__nav--left,
+  .top__nav--right {
+    display: none;
   }
 
   .logo {
-    order: 1;
-    width: 20vh;
-    max-width: 150px;
-    margin: 0.5rem 0;
-  }
-
-  .top__nav--left {
     order: 2;
+    width: 120px;
+    max-width: 120px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    z-index: 1;
   }
 
-  .top__nav--right {
-    order: 3;
+  .mobile-menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100vh;
+    background: linear-gradient(180deg, #000000 0%, #1a1a1a 100%);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5rem 2rem 2rem;
+    gap: 0;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.8);
+    border-right: 2px solid var(--border-gold);
+    transition: left 0.3s ease;
+    z-index: 100;
+    overflow-y: auto;
   }
 
-  .section-title {
-    font-size: 2rem;
+  .mobile-menu.open {
+    left: 0;
   }
 
-  .menu-title,
-  .contact-title,
-  .localization-title {
-    font-size: 2rem;
+  .mobile-menu a {
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(255, 189, 89, 0.1);
+    text-align: left;
+    transition: all 0.3s ease;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-family: "Teko", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
   }
 
-  .about-text {
-    font-size: 1rem;
+  .mobile-menu a:hover {
+    color: var(--primary-gold);
+    padding-left: 1rem;
   }
 
-  .online-in-house {
-    width: 95%;
+  .mobile-menu a::before {
+    display: none;
   }
 
+  /* hero */
   .hero-section {
     padding: 2rem 1rem;
   }
 
+  .online-in-house {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+  }
+
+  .div--the-best-pizza {
+    margin: 1.5rem 0 2rem;
+    font-size: 1.5rem;
+  }
+
+  .paragraph--best-pizza {
+    font-size: 1.3rem;
+    padding: 0 1rem;
+  }
+
+  /* secoes */
   .about-section,
   .highlights-section,
   .features-section {
-    padding: 4rem 1.5rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .menu-grid {
-    grid-template-columns: 1fr;
+    padding: 3rem 1rem;
+    margin: 2rem 0;
   }
 
   .section-title {
     font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
   }
 
-  .menu-title,
-  .contact-title,
-  .localization-title {
-    font-size: 1.8rem;
+  .about-text {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    padding: 0 0.5rem;
+  }
+
+  /* cards */
+  .highlights-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2rem auto;
+    padding: 0 0.5rem;
+  }
+
+  .highlight-card {
+    max-width: 100%;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .menu-item {
+    max-width: 100%;
+  }
+
+  .menu-item-image {
+    height: 180px;
+  }
+
+  .menu-item-content {
+    padding: 1.2rem;
+  }
+
+  .menu-item h3 {
+    font-size: 1.4rem;
+  }
+
+  .menu-item p {
+    font-size: 0.9rem;
+  }
+
+  /* menu */
+  .menu-section {
+    padding: 3rem 1rem;
+  }
+
+  .menu-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.8rem;
+  }
+
+  .menu-subtitle {
+    font-size: 1rem;
+    margin: 2rem 0 3rem;
+    padding: 0 0.5rem;
+  }
+
+  .category-title {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .menu-category {
+    margin-bottom: 3rem;
+  }
+
+  /* contato */
+  .contact-section {
+    padding: 3rem 1rem;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.8rem;
+  }
+
+  .contact-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .contact-form {
     padding: 2rem 1.5rem;
   }
 
-  .info-card,
+  .contact-form h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .info-card {
+    padding: 1.5rem;
+  }
+
+  .info-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .info-card p {
+    font-size: 0.95rem;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .social-links a {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  /* localizacao */
+  .localization-section {
+    padding: 3rem 1rem;
+  }
+
+  .localization-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+  }
+
+  .localization-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   .address-card {
     padding: 1.5rem;
   }
+
+  .address-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .address-card p {
+    font-size: 0.95rem;
+  }
+
+  .map-container {
+    height: 300px;
+    border-radius: 15px;
+  }
+
+  /* footer */
+  .baseboard--footer {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .baseboard {
+    padding: 0.8rem;
+    gap: 0.8rem;
+  }
+
+  .baseboard p {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .baseboard img {
+    max-width: 120px;
+    height: auto;
+  }
+
+  /* modais */
+  .cart-modal,
+  .checkout-modal {
+    width: 95%;
+    max-width: 95%;
+    max-height: 95vh;
+    border-radius: 15px;
+  }
+
+  .cart-header,
+  .checkout-header {
+    padding: 1rem;
+  }
+
+  .cart-header h2,
+  .checkout-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .cart-content,
+  .checkout-content {
+    padding: 1rem;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .cart-item-image {
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+  }
+
+  .cart-item-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .cart-item-controls {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .checkout-summary,
+  .delivery-section,
+  .address-section,
+  .pickup-section,
+  .payment-section {
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .delivery-options {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .delivery-option {
+    padding: 1.2rem;
+  }
+
+  .delivery-icon {
+    font-size: 2.5rem;
+  }
+
+  .delivery-title {
+    font-size: 1.3rem;
+  }
+
+  .address-form .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .payment-methods {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .menu-item-footer,
+  .highlight-footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .add-to-cart-btn {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  /* botao flutuante */
+  .floating-cart-btn {
+    width: 55px;
+    height: 55px;
+    font-size: 1.8rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .floating-cart-badge {
+    width: 22px;
+    height: 22px;
+    font-size: 0.75rem;
+  }
+
+  /* alerta customizado */
+  .custom-alert {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .alert-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .alert-message {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .alert-close-btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 1.1rem;
+  }
 }
 
-/* scroll suave */
+/* mobile pequeno */
+@media screen and (max-width: 480px) {
+  /* header */
+  .main__header {
+    padding: 0.4rem 0.8rem;
+    font-size: 10px;
+  }
+
+  .top-description {
+    font-size: 0.65rem;
+    line-height: 1.4;
+  }
+
+  /* navegacao */
+  .top__nav {
+    padding: 1.2rem 0.8rem;
+    min-height: 90px;
+  }
+
+  .top__nav--links a {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .logo {
+    width: 120px;
+    max-width: 120px;
+  }
+
+  /* hero */
+  .hero-section {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .div--the-best-pizza {
+    font-size: 1.2rem;
+    margin: 1rem 0 1.5rem;
+  }
+
+  .paragraph--best-pizza {
+    font-size: 1.1rem;
+  }
+
+  /* secoes */
+  .about-section,
+  .highlights-section,
+  .features-section {
+    padding: 2.5rem 0.8rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+    letter-spacing: 1.5px;
+  }
+
+  .about-text {
+    font-size: 0.9rem;
+  }
+
+  /* menu */
+  .menu-section {
+    padding: 2.5rem 0.8rem;
+  }
+
+  .menu-title,
+  .contact-title,
+  .localization-title {
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
+  }
+
+  .menu-subtitle {
+    font-size: 0.95rem;
+    margin: 1.5rem 0 2.5rem;
+  }
+
+  .category-title {
+    font-size: 1.4rem;
+  }
+
+  .menu-item-image {
+    height: 160px;
+  }
+
+  .menu-item-content {
+    padding: 1rem;
+  }
+
+  .menu-item h3 {
+    font-size: 1.3rem;
+  }
+
+  .menu-item p {
+    font-size: 0.85rem;
+  }
+
+  /* contato */
+  .contact-section {
+    padding: 2.5rem 0.8rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem 1rem;
+  }
+
+  .contact-form h2 {
+    font-size: 1.4rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group label {
+    font-size: 1rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 0.9rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .info-card,
+  .address-card {
+    padding: 1.2rem;
+  }
+
+  .info-card h3,
+  .address-card h3 {
+    font-size: 1.2rem;
+  }
+
+  /* localizacao */
+  .localization-section {
+    padding: 2.5rem 0.8rem;
+  }
+
+  .map-container {
+    height: 250px;
+  }
+
+  /* modais */
+  .cart-modal,
+  .checkout-modal {
+    width: 98%;
+    max-width: 98%;
+    border-radius: 12px;
+  }
+
+  .cart-header,
+  .checkout-header {
+    padding: 0.8rem;
+  }
+
+  .cart-header h2,
+  .checkout-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .cart-content,
+  .checkout-content {
+    padding: 0.8rem;
+  }
+
+  .cart-item {
+    padding: 0.8rem;
+  }
+
+  .checkout-summary,
+  .delivery-section,
+  .address-section,
+  .pickup-section,
+  .payment-section {
+    padding: 1rem;
+  }
+
+  .delivery-option {
+    padding: 1rem;
+  }
+
+  .delivery-icon {
+    font-size: 2rem;
+  }
+
+  .delivery-title {
+    font-size: 1.2rem;
+  }
+
+  .delivery-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .address-form .form-group label {
+    font-size: 0.95rem;
+  }
+
+  .address-form input {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .summary-item-main {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .summary-total {
+    font-size: 1.1rem;
+  }
+
+  /* botao flutuante */
+  .floating-cart-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.6rem;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .floating-cart-badge {
+    width: 20px;
+    height: 20px;
+    font-size: 0.7rem;
+  }
+
+  /* footer */
+  .baseboard--footer {
+    padding: 1.2rem 0.5rem;
+  }
+
+  .baseboard {
+    padding: 0.6rem;
+    gap: 0.6rem;
+  }
+
+  .baseboard p {
+    font-size: 0.75rem;
+  }
+
+  .baseboard img {
+    max-width: 100px;
+  }
+}
+
+/* scroll */
 html {
   scroll-behavior: smooth;
 }
 
-/* selecao de texto customizada */
+/* selecao de texto */
 ::selection {
   background: var(--primary-gold);
   color: var(--dark-bg);
@@ -1259,7 +1919,7 @@ html {
   color: var(--dark-bg);
 }
 
-/* botao flutuante do carrinho */
+/* botao carrinho */
 .floating-cart-btn {
   position: fixed;
   bottom: 2rem;
@@ -1323,7 +1983,7 @@ html {
   }
 }
 
-/* botoes de adicionar ao carrinho */
+/* botao adicionar */
 .menu-item-footer,
 .highlight-footer {
   display: flex;
@@ -1356,9 +2016,9 @@ html {
   box-shadow: 0 5px 15px rgba(255, 189, 89, 0.4);
 }
 
-/* modal do carrinho */
+/* carrinho */
 .cart-overlay,
-/* custom alert */
+/* alerta */
 .custom-alert-overlay {
   position: fixed;
   top: 0;
@@ -1754,7 +2414,7 @@ html {
   font-weight: bold;
 }
 
-/* delivery section */
+/* delivery */
 .delivery-section {
   background: var(--card-bg-light);
   padding: 1.5rem;
@@ -1851,7 +2511,7 @@ html {
   box-shadow: 0 5px 20px rgba(255, 189, 89, 0.4);
 }
 
-/* address section */
+/* endereco */
 .address-section {
   background: var(--card-bg-light);
   padding: 1.5rem;
@@ -1913,7 +2573,7 @@ html {
   flex: 1;
 }
 
-/* pickup section */
+/* retirada */
 .pickup-section {
   background: var(--card-bg-light);
   padding: 1.5rem;
@@ -2134,30 +2794,4 @@ html {
 .order-confirmed p {
   color: var(--text-secondary);
   margin-bottom: 2rem;
-}
-
-@media screen and (max-width: 768px) {
-  .cart-modal,
-  .checkout-modal {
-    width: 95%;
-    max-height: 95vh;
-  }
-
-  .form-row {
-    grid-template-columns: 1fr;
-  }
-
-  .payment-methods {
-    flex-direction: column;
-  }
-
-  .menu-item-footer,
-  .highlight-footer {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .add-to-cart-btn {
-    width: 100%;
-  }
 }

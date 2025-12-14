@@ -15,7 +15,7 @@ export const CartProvider = ({ children }) => {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
 
-  // carrega carrinho do localStorage ao iniciar
+  // carrega do localStorage
   useEffect(() => {
     const savedCart = localStorage.getItem('pizzariaCart');
     if (savedCart) {
@@ -23,7 +23,7 @@ export const CartProvider = ({ children }) => {
     }
   }, []);
 
-  // salva carrinho no localStorage quando muda
+  // salva no localStorage
   useEffect(() => {
     localStorage.setItem('pizzariaCart', JSON.stringify(cartItems));
   }, [cartItems]);
