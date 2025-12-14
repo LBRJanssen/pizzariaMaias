@@ -10,7 +10,7 @@ import Localization from './pages/Localization';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/pizzariaMaias">
       <div className="App">
         <Header />
         <Nav />

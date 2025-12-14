@@ -1,7 +1,7 @@
 {
   "name": "pizzaria-maias-react",
   "private": true,
-  "version": "1.0.0"
+  "version": "1.0.0",
   "description": "Site da Pizzaria Maia's desenvolvido com React + Vite",
   "type": "module",
   "author": "LBRJanssen",

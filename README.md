@@ -10,6 +10,10 @@
 
 </div>
 
+## 🌐 Site Online
+
+**Acesse o site:** [https://lbrjanssen.github.io/pizzariaMaias/](https://lbrjanssen.github.io/pizzariaMaias/)
+
 ## Sobre o Projeto
 
 Pizzaria Maia's é um site completo desenvolvido com **React + Vite**, apresentando uma pizzaria com design moderno e responsivo. O projeto foi migrado de HTML/CSS/JS puro para React, mantendo todas as funcionalidades e melhorando significativamente a organização do código.
