@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* Variaveis CSS para consistencia */
+/* variaveis css */
 :root {
   --primary-red: #b71e23;
   --primary-gold: #FFBD59;
@@ -16,7 +16,7 @@
   --shadow-dark: rgba(0, 0, 0, 0.5);
 }
 
-/* Animacoes profissionais */
+/* animacoes mais robustas */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -79,7 +79,7 @@
   }
 }
 
-/* Header melhorado */
+/* header */
 .main__header {
   display: flex;
   justify-content: space-around;
@@ -123,7 +123,7 @@
   filter: drop-shadow(0 4px 8px rgba(255, 189, 89, 0.5));
 }
 
-/* Navigation melhorada com sticky */
+/* nav com sticky */
 .top__nav {
   display: flex;
   background: linear-gradient(180deg, #000000 0%, #1a1a1a 100%);
@@ -203,7 +203,7 @@
   filter: drop-shadow(0 6px 12px rgba(255, 189, 89, 0.5));
 }
 
-/* Hero Section melhorado */
+/* hero section */
 .hero-section {
   padding: 4rem 2rem;
   background: linear-gradient(180deg, var(--dark-bg) 0%, #1a1a1a 100%);
@@ -280,7 +280,7 @@
   line-height: 1.4;
 }
 
-/* About Section melhorada */
+/* sobre nos */
 .about-section {
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
   padding: 6rem 2rem;
@@ -345,7 +345,7 @@
   animation: fadeInUp 1s ease-out 0.2s both;
 }
 
-/* Highlights Section melhorada */
+/* destaques do cardapio */
 .highlights-section {
   padding: 6rem 2rem;
   background: linear-gradient(180deg, var(--dark-bg) 0%, #0f0f0f 100%);
@@ -518,7 +518,7 @@
   z-index: 1;
 }
 
-/* Features Section melhorada */
+/* features da pizzaria */
 .features-section {
   padding: 6rem 2rem;
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
@@ -590,7 +590,7 @@
   z-index: 1;
 }
 
-/* Menu Styles melhorados */
+/* estilos do menu */
 .menu-section {
   padding: 4rem 2rem;
   min-height: 80vh;
@@ -753,7 +753,7 @@
   background-clip: text;
 }
 
-/* Contact Styles melhorados */
+/* estilos do contato */
 .contact-section {
   padding: 5rem 2rem;
   min-height: 80vh;
@@ -968,7 +968,7 @@
   transform: none;
 }
 
-/* Localization Styles melhorados */
+/* estilos da localizacao */
 .localization-section {
   padding: 5rem 2rem;
   min-height: 80vh;
@@ -1069,7 +1069,7 @@
   display: block;
 }
 
-/* Footer melhorado */
+/* footer */
 .baseboard--footer {
   background: linear-gradient(135deg, var(--primary-gold) 0%, #ffd700 100%);
   padding: 2rem 0;
@@ -1103,7 +1103,7 @@
   transform: scale(1.1) translateY(-2px);
 }
 
-/* Responsividade melhorada */
+/* responsivo */
 @media screen and (max-width: 968px) {
   .contact-container,
   .localization-container {
@@ -1215,12 +1215,12 @@
   }
 }
 
-/* Scroll suave */
+/* scroll suave */
 html {
   scroll-behavior: smooth;
 }
 
-/* Selecao de texto personalizada */
+/* selecao de texto customizada */
 ::selection {
   background: var(--primary-gold);
   color: var(--dark-bg);

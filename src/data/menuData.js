@@ -1,5 +1,5 @@
-// Dados do cardapio com imagens de pizzas
-// Usando URLs de imagens publicas de pizzas do Unsplash
+// dados do cardapio
+// imagens do unsplash
 
 export const menuData = {
   tradicionais: [
@@ -87,7 +87,7 @@ export const menuData = {
   ]
 };
 
-// Destaques para a home
+// pizzas em destaque na home
 export const highlights = [
   {
     id: 1,
