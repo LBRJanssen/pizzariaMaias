@@ -12,7 +12,7 @@
 
 ## 🌐 Site Online
 
-**Acesse o site:** [https://lbrjanssen.github.io/pizzariaMaias/](https://lbrjanssen.github.io/pizzariaMaias/)
+**Acesse o site:** <a href="https://lbrjanssen.github.io/pizzariaMaias/" target="_blank" rel="noopener noreferrer">https://lbrjanssen.github.io/pizzariaMaias/</a>
 
 ## Sobre o Projeto
 
