@@ -1,6 +1,9 @@
 import { menuData } from '../data/menuData';
+import { useCart } from '../context/CartContext';
 
 const Menu = () => {
+  const { addToCart } = useCart();
+  
   const formatPrice = (price) => {
     return price.toFixed(2).replace('.', ',');
   };
@@ -25,9 +28,19 @@ const Menu = () => {
                     className="menu-item-image"
                     loading="lazy"
                   />
-                  <h3>{pizza.name}</h3>
-                  <p>{pizza.description}</p>
-                  <span className="price">R$ {formatPrice(pizza.price)}</span>
+                  <div className="menu-item-content">
+                    <h3>{pizza.name}</h3>
+                    <p>{pizza.description}</p>
+                    <div className="menu-item-footer">
+                      <span className="price">R$ {formatPrice(pizza.price)}</span>
+                      <button
+                        onClick={() => addToCart(pizza)}
+                        className="add-to-cart-btn"
+                      >
+                        Adicionar
+                      </button>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
@@ -44,9 +57,19 @@ const Menu = () => {
                     className="menu-item-image"
                     loading="lazy"
                   />
-                  <h3>{pizza.name}</h3>
-                  <p>{pizza.description}</p>
-                  <span className="price">R$ {formatPrice(pizza.price)}</span>
+                  <div className="menu-item-content">
+                    <h3>{pizza.name}</h3>
+                    <p>{pizza.description}</p>
+                    <div className="menu-item-footer">
+                      <span className="price">R$ {formatPrice(pizza.price)}</span>
+                      <button
+                        onClick={() => addToCart(pizza)}
+                        className="add-to-cart-btn"
+                      >
+                        Adicionar
+                      </button>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
@@ -63,9 +86,19 @@ const Menu = () => {
                     className="menu-item-image"
                     loading="lazy"
                   />
-                  <h3>{pizza.name}</h3>
-                  <p>{pizza.description}</p>
-                  <span className="price">R$ {formatPrice(pizza.price)}</span>
+                  <div className="menu-item-content">
+                    <h3>{pizza.name}</h3>
+                    <p>{pizza.description}</p>
+                    <div className="menu-item-footer">
+                      <span className="price">R$ {formatPrice(pizza.price)}</span>
+                      <button
+                        onClick={() => addToCart(pizza)}
+                        className="add-to-cart-btn"
+                      >
+                        Adicionar
+                      </button>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>

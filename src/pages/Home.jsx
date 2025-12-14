@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import { highlights } from '../data/menuData';
+import { useCart } from '../context/CartContext';
 
 const Home = () => {
+  const { addToCart } = useCart();
   return (
     <main>
       <section id="home" className="hero-section">
@@ -44,9 +46,19 @@ const Home = () => {
                 className="menu-item-image"
                 loading="lazy"
               />
-              <h3>{pizza.name}</h3>
-              <p>{pizza.description}</p>
-              <span className="highlight-price">R$ {pizza.price.toFixed(2)}</span>
+              <div className="highlight-card-content">
+                <h3>{pizza.name}</h3>
+                <p>{pizza.description}</p>
+                <div className="highlight-footer">
+                  <span className="highlight-price">R$ {pizza.price.toFixed(2)}</span>
+                  <button
+                    onClick={() => addToCart(pizza)}
+                    className="add-to-cart-btn"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
             </div>
           ))}
         </div>
