@@ -12,7 +12,7 @@ const Nav = () => {
         </Link>
       </div>
 
-      <img alt="Logo da Pizzaria Maia's" className="logo" src="/image/logo-maias.png" />
+      <img alt="Logo da Pizzaria Maia's" className="logo" src={`${import.meta.env.BASE_URL}image/logo-maias.png`} />
 
       <div className="top__nav--links top__nav--right">
         <Link to="/contact" aria-label="Ir para página de contato">

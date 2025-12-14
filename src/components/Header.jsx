@@ -14,7 +14,7 @@ const Header = () => {
         <img
           alt="icone-github"
           className="icon--github-circle"
-          src="/image/git--icon.png"
+          src={`${import.meta.env.BASE_URL}image/git--icon.png`}
         />
       </a>
     </header>

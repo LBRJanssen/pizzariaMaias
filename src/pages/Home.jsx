@@ -10,7 +10,7 @@ const Home = () => {
             <img
               alt="item--primary"
               className="online-in-house"
-              src="/image/peperonni--pizza.png"
+              src={`${import.meta.env.BASE_URL}image/peperonni--pizza.png`}
             />
           </div>
           <div className="div--the-best-pizza">
