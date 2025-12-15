@@ -42,47 +42,6 @@ Este projeto começou em 2022 como um site estático em HTML/CSS/JavaScript puro
 - **CSS3** - Estilização com animações e gradientes modernos
 - **Google Fonts** - Fontes Teko, Redressed e Inter
 
-## Como Executar
-
-### Pré-requisitos
-
-- Node.js (versão 18 ou superior)
-- npm ou yarn
-
-### Instalação
-
-1. Clone o repositório:
-```bash
-git clone https://github.com/LBRJanssen/pizzariaMaias.git
-cd pizzariaMaias
-```
-
-2. Instale as dependências:
-```bash
-npm install
-```
-
-3. Execute o projeto em modo de desenvolvimento:
-```bash
-npm run dev
-```
-
-4. Abra o navegador em `http://localhost:5173`
-
-### Build para Produção
-
-```bash
-npm run build
-```
-
-O build será gerado na pasta `dist/`.
-
-### Preview do Build
-
-```bash
-npm run preview
-```
-
 ## Cardápio
 
 O cardápio inclui imagens reais de pizzas para cada item:
