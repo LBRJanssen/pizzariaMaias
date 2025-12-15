@@ -76,10 +76,6 @@ O site é totalmente responsivo e funciona perfeitamente em:
 - [GitHub](https://github.com/LBRJanssen)
 - [LinkedIn](https://www.linkedin.com/in/lbjanssen/)
 
-## Licença
-
-Este projeto é de código aberto e está disponível sob a licença MIT.
-
 ## Autor
 
 **Lucas Janssen**
